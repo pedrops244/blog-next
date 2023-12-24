@@ -9,7 +9,6 @@ export type DynamicPostProps = {
   post: PostData;
 };
 const DynamicPost = ({ post }: DynamicPostProps) => {
-  console.log(post.attributes.content);
   return <Post post={post} />;
 };
 
