@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   transition: opacity 300ms ease-in-out;
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 `;
 
