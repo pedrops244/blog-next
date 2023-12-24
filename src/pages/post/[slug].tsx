@@ -8,7 +8,13 @@ export type DynamicPostProps = {
   post: PostData;
 };
 const DynamicPost = ({ post }: DynamicPostProps) => {
-  return <p>{post.attributes.title}</p>;
+  console.log(post.attributes.content);
+  return (
+    <>
+      <p>{post.attributes.title}</p>
+      <p dangerouslySetInnerHTML={{ __html: post.attributes.content }} />;
+    </>
+  );
 };
 
 export default DynamicPost;
