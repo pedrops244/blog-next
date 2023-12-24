@@ -6,5 +6,11 @@ export const Container = styled.main`
     font-size: ${theme.font.sizes.medium};
     margin: 0 auto;
     padding: ${theme.spacings.medium};
-  `}
+  `};
+
+  img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
 `;
